@@ -1,0 +1,26 @@
+<div *ngIf="employee">
+    <app-employee-ui [employee]="employee"></app-employee-ui>
+    <button (click)="updateEmployee()">Aggiorna Impiegato</button>
+    <button (click)="deleteEmployee()">Elimina Impiegato</button>
+    <table>
+        <tr>
+            <td>
+                <button (click)="faltGrowth()">Flat Growth</button>
+            </td>
+            <td>
+                <button (click)="doubleGrowth()">Double Growth</button>
+            </td>
+            <td>
+                <button (click)="expGrowth()">Exp Growth</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button (click)="back()">Back</button>
+            </td>
+            <td>
+                <button (click)="redo()">Redo</button>
+            </td>
+        </tr>
+    </table>
+</div>

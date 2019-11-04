@@ -1,0 +1,23 @@
+<form [formGroup]="employeeForm" (ngSubmit)="createEmployee()">
+    <table border="0px">
+        <tr>
+            <td>Id:</td>
+            <td><input type="number" formControlName="id" /></td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" formControlName="name" /></td>
+        </tr>
+        <tr>
+            <td>Surname:</td>
+            <td><input type="text" formControlName="surname" /></td>
+        </tr>
+        <tr>
+            <td>Wage:</td>
+            <td><input type="number" formControlName="wage" /></td>
+        </tr>
+        <tr>
+            <button type="submit" [disabled]="!employeeForm.valid">Crea Impiegato</button>
+        </tr>
+    </table>
+</form>
